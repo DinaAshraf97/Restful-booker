@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/Dina/IdeaProjects/RestAssured/src/test/java/testcases">
+        <classes>
+            <class name="testcases.CreateBooking">
+                <methods>
+                    <include name="createBookingSuccessfully"/>
+                    <include name="createBookingWithGetMethod"/>
+                    <include name="createBookingWithPutMethod"/>
+                    <include name="createBookingWithPatchMethod"/>
+                    <include name="createBookingWithInvalidFirstName"/>
+                    <include name="createBookingWithInvalidLastName"/>
+                    <include name="createBookingWithInvalidTotalPrice"/>
+                    <include name="createBookingWithInvalidDepositPaid"/>
+                    <include name="createBookingWithInvalidMonthInCheckin"/>
+                    <include name="createBookingWithOldCheckinDate"/>
+                    <include name="createBookingWithInvalidAdditional"/>
+                    <include name="createBookingWithEmptyFirstName"/>
+                    <include name="createBookingWithEmptyLastName"/>
+                    <include name="createBookingWithEmptyTotalPrice"/>
+                    <include name="createBookingWithEmptyDepositPaid"/>
+                    <include name="createBookingWithEmptyCheckin"/>
+                    <include name="createBookingWithEmptyCheckoutDate"/>
+                </methods>
+            </class>
+            <class name="testcases.CreateToken">
+                <methods>
+                    <include name="createTokenSuccessfully"/>
+                    <include name="createTokenWithInvalidUserName"/>
+                    <include name="createTokenWithInvalidPassword"/>
+                    <include name="createTokenWithPutMethod"/>
+                    <include name="createTokenWithGetMethod"/>
+                </methods>
+            </class>
+            <class name="testcases.DeleteBooking">
+                <methods>
+                    <include name="DeleteBookingSuccessfully"/>
+                    <include name="DeleteBookingWithUnauthorizedAccount"/>
+                    <include name="DeleteBookingWithPostMethod"/>
+                    <include name="DeleteBookingWithGettMethod"/>
+                    <include name="DeleteBookingWithPutMethod"/>
+                </methods>
+            </class>
+            <class name="testcases.GetAllBookingIDs">
+                <methods>
+                    <include name="getAllBookingIDsSuccessfully"/>
+                    <include name="getAllBookingIDsWithPostMethod"/>
+                    <include name="getAllBookingIDsWithPutMethod"/>
+                </methods>
+            </class>
+            <class name="testcases.PartialUpdateBooking">
+                <methods>
+                    <include name="PartialUpdateBookingSuccessfully"/>
+                    <include name="PartialUpdateBookingWithUnautharizedAccount"/>
+                    <include name="PartialUpdateBookingWithPostMethod"/>
+                </methods>
+            </class>
+            <class name="testcases.UpdateBooking">
+                <methods>
+                    <include name="UpdateBookingSuccessfully"/>
+                    <include name="UpdateBookingWithUnauthorizedAccount"/>
+                    <include name="UpdateBookingWithPostMethod"/>
+                    <include name="UpdateBookingWithInvalidFirstName"/>
+                    <include name="UpdateBookingWithInvalidLastName"/>
+                    <include name="UpdateBookingWithInvalidTotalPrice"/>
+                    <include name="UpdateBookingWithInvalidDepositPaid"/>
+                    <include name="UpdateBookingWithInvalidMonthInCheckin"/>
+                    <include name="UpdateBookingWithOldCheckinDate"/>
+                    <include name="UpdateBookingWithInvalidAdditional"/>
+                    <include name="UpdateBookingWithEmptyFirstName"/>
+                    <include name="UpdateBookingWithEmptyLastName"/>
+                    <include name="UpdateBookingWithEmptyTotalPrice"/>
+                    <include name="UpdateBookingWithEmptyDepositPaid"/>
+                    <include name="UpdateBookingWithEmptyCheckin"/>
+                    <include name="UpdateBookingWithEmptyCheckoutDate"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
